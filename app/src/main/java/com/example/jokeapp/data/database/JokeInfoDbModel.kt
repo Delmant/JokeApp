@@ -10,7 +10,7 @@ data class JokeInfoDbModel(
     val type: String,
     val setup: String,
     val delivery: String,
-    val flags: MutableList<Map<String, Boolean>>,
+    val flags: String,
     @PrimaryKey
     val id: Int,
     val safe: Boolean,
