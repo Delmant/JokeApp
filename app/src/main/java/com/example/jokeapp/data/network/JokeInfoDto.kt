@@ -1,13 +1,14 @@
-package com.example.jokeapp.domain
+package com.example.jokeapp.data.network
 
-data class JokeInfo(
+data class JokeInfoDto(
     val error: Boolean,
     val category: String,
     val type: String,
     val setup: String,
     val delivery: String,
-    val flags: MutableList<Pair<String, Boolean>>,
+    val flags: MutableList<Map<String, Boolean>>,
     val id: Int,
     val safe: Boolean,
     val lang: String
-)
+) {
+}
