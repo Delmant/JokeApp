@@ -18,14 +18,14 @@ abstract class JokeDatabase : RoomDatabase() {
 
         fun getInstance(context: Context): JokeDatabase {
             synchronized(LOCK) {
-                db?.let {
-                    return it
-                }
-                val instance = Room.databaseBuilder(
-                    context,
-                    JokeDatabase::class.java,
-                    DB_NAME
-                ).build()
+                db?.let { return it }
+                val instance =
+                    Room.databaseBuilder(
+                        context,
+                        JokeDatabase::class.java,
+                        DB_NAME
+                    )
+                        .build()
                 db = instance
                 return instance
             }
