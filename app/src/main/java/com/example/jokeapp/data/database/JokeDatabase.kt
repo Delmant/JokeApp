@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [JokeInfoDbModel::class], version = 1)
 abstract class JokeDatabase : RoomDatabase() {
 
-    abstract fun JokeDao()
+    abstract fun JokeDao(): JokeDao
 
     companion object {
 
