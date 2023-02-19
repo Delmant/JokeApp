@@ -1,18 +1,17 @@
-package com.example.jokeapp.data.database
+package com.example.jokeapp.data.database.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "joke_db")
 data class JokeInfoDbModel(
-    val error: Boolean,
     val category: String,
-    val type: String,
-    val setup: String,
-    val delivery: String,
-    val flags: String,
+    val error: Boolean,
+    val flagsDto: FlagsDbModel,
     @PrimaryKey
     val id: Int,
+    val joke: String,
+    val lang: String,
     val safe: Boolean,
-    val lang: String
+    val type: String
 )

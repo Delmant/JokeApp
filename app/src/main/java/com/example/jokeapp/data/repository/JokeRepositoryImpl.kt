@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.LiveData
 import com.example.jokeapp.data.database.JokeDatabase
 import com.example.jokeapp.data.network.ApiFactory
-import com.example.jokeapp.domain.JokeInfo
+import com.example.jokeapp.domain.entity.JokeInfo
 import com.example.jokeapp.domain.JokeRepository
 
 class JokeRepositoryImpl(
