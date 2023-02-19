@@ -8,7 +8,6 @@ import androidx.room.Query
 
 @Dao
 interface JokeDao {
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertJoke(joke: JokeInfoDbModel)
 
