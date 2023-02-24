@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class JokeInfoDbModel(
     val category: String,
     val error: Boolean,
-    val flagsDto: FlagsDbModel,
+    val flagsDto: String,
     @PrimaryKey
     val id: Int,
     val joke: String,
