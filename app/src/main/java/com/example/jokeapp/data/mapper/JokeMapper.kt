@@ -1,9 +1,12 @@
 package com.example.jokeapp.data.mapper
 
+import android.app.job.JobService
 import com.example.jokeapp.data.database.model.JokeInfoDbModel
 import com.example.jokeapp.data.network.model.JokeInfoDto
 import com.example.jokeapp.domain.entity.Flags
 import com.example.jokeapp.domain.entity.JokeInfo
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 
 class JokeMapper {
 
