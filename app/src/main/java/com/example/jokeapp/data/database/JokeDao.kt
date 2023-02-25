@@ -13,5 +13,5 @@ interface JokeDao {
     fun insertJoke(joke: JokeInfoDbModel)
 
     @Query("SELECT * FROM joke_db")
-    fun getJoke(): LiveData<JokeInfoDbModel>
+    fun getJoke(id: Int): LiveData<JokeInfoDbModel>
 }
