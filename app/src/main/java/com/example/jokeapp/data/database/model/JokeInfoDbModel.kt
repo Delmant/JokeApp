@@ -9,7 +9,7 @@ data class JokeInfoDbModel(
     val error: Boolean,
     val flagsDto: String,
     @PrimaryKey
-    val id: Int,
+    val id: Int = 1,
     val joke: String,
     val lang: String,
     val safe: Boolean,

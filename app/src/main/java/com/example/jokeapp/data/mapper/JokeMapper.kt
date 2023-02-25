@@ -14,7 +14,7 @@ class JokeMapper {
         category = jokeInfoDto.category,
         error = jokeInfoDto.error,
         flagsDto = jokeInfoDto.flagsDto.toString(),
-        id = jokeInfoDto.id,
+//        id = jokeInfoDto.id,
         joke = jokeInfoDto.joke,
         lang = jokeInfoDto.lang,
         safe = jokeInfoDto.safe,
