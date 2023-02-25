@@ -33,12 +33,22 @@ class JokeMapper {
 
     private fun mapStringToFlags(str: String): Flags {
         return Flags(
-            explicit = str.split(",")[0].split("(")[1].toBoolean(),
-            nsfw = str.split(",")[1].toBoolean(),
-            political = str.split(",")[2].toBoolean(),
-            racist = str.split(",")[3].toBoolean(),
-            religious = str.split(",")[4].toBoolean(),
-            sexist = str.split(",")[5].toBoolean()
+            explicit = str.split(",")[0].split("(")[KEY_EXPLICIT].toBoolean(),
+            nsfw = str.split(",")[KEY_NSFW].toBoolean(),
+            political = str.split(",")[KEY_POLITICAL].toBoolean(),
+            racist = str.split(",")[KEY_RACIST].toBoolean(),
+            religious = str.split(",")[KEY_RELIGIOUS].toBoolean(),
+            sexist = str.split(",")[KEY_SEXIST].toBoolean()
         )
+    }
+
+    companion object {
+
+        private const val KEY_EXPLICIT = 1
+        private const val KEY_NSFW = 1
+        private const val KEY_POLITICAL = 2
+        private const val KEY_RACIST = 3
+        private const val KEY_RELIGIOUS = 4
+        private const val KEY_SEXIST = 5
     }
 }
